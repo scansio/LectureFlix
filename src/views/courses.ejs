@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LectureFlix Courses</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <h1>LectureFlix Public Courses</h1>
+    <ul>
+        <% courses?.forEach(course=> { %>
+            <li>
+                <strong>
+                    <%= course.course_name %>
+                </strong>: <%= course.video_title %> (<%= course.video_access %>)
+            </li>
+            <% }); %>
+    </ul>
+</body>
+
+</html>
