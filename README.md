@@ -40,22 +40,30 @@ LectureFlix is a prototype for an academic content platform designed to combine 
 
 #### Setup Instructions
 
-1. **Database Setup:**
-   - Create PostgreSQL databases: `lectureflix_courses`, `lectureflix_users`, `lectureflix_analytics`.
-   - Populate tables using SQL scripts or sample data provided.
-
-2. **Backend Setup:**
-   - Install dependencies:
+1. **Backend Setup:**
+   - Intiialize and Install dependencies:
      ```bash
-     npm install express pg cors
+     npm run init
      ```
    - Run the server:
      ```bash
-     node server.js
+     npm start
      ```
 
+2. **Database Setup:**
+**WARNING:** *If you have previously created databases please make sure you backup your database as the migration script will DROP/DELETE your database*
+   - To initialize and populate mockups run 
+     ```bash
+     npm run init:database
+     ```
+   - To only create the databases and tables run 
+     ```bash
+     npm run migrate
+     ```
+
+
 3. **Frontend Setup:**
-   - Open `index.html` in a browser.
+   - Open `http://localhost:3000` in a browser.
    - Ensure the backend server is running at `http://localhost:3000`.
 
 ---
