@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <h1>Course Details</h1>
+    <h2><%= course[0]?.course_name %></h2>
+    <ul>
+        <% course?.forEach(video => { %>
+            <li>
+                <strong>
+                    <%= video.video_title %>
+                </strong>: (<%= video.video_access %>)
+            </li>
+        <% }); %>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <h1>Subscribe to LectureFlix</h1>
+    <form action="/subscribe" method="POST">
+        <label for="user_id">User ID:</label>
+        <input type="text" id="user_id" name="user_id" required>
+        <br>
+        <label for="subscription_start_date">Subscription Start Date:</label>
+        <input type="date" id="subscription_start_date" name="subscription_start_date" required>
+        <br>
+        <label for="subscription_end_date">Subscription End Date:</label>
+        <input type="date" id="subscription_end_date" name="subscription_end_date" required>
+        <br>
+        <button type="submit">Subscribe</button>
+    </form>
+</body>
+
+</html>

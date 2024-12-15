@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Course</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <h1>Upload a New Course</h1>
+    <form action="/upload-course" method="POST">
+        <label for="course_name">Course Name:</label>
+        <input type="text" id="course_name" name="course_name" required>
+        <br>
+        <label for="lecturer_id">Lecturer ID:</label>
+        <input type="text" id="lecturer_id" name="lecturer_id" required>
+        <br>
+        <label for="video_title">Video Title:</label>
+        <input type="text" id="video_title" name="video_title" required>
+        <br>
+        <label for="video_access">Access Type:</label>
+        <select id="video_access" name="video_access">
+            <option value="public">Public</option>
+            <option value="restricted">Restricted</option>
+        </select>
+        <br>
+        <button type="submit">Upload Course</button>
+    </form>
+</body>
+
+</html>

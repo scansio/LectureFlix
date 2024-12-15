@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase License</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <h1>Purchase a License</h1>
+    <form action="/purchase-license" method="POST">
+        <label for="school_id">School ID:</label>
+        <input type="text" id="school_id" name="school_id" required>
+        <br>
+        <label for="course_id">Course ID:</label>
+        <input type="text" id="course_id" name="course_id" required>
+        <br>
+        <label for="license_start_date">License Start Date:</label>
+        <input type="date" id="license_start_date" name="license_start_date" required>
+        <br>
+        <label for="license_end_date">License End Date:</label>
+        <input type="date" id="license_end_date" name="license_end_date" required>
+        <br>
+        <button type="submit">Purchase License</button>
+    </form>
+</body>
+
+</html>

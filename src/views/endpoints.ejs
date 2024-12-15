@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LectureFlix Courses</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <h1>LectureFlix endpoints</h1>
+    <ul>
+        <% Object.entries(routes)?.forEach(([path, route])=> { %>
+            <li>
+                <a href="<%= route.method == 'get' ? path : '#' %>">
+                    <strong>
+                        <%= route.description %>
+                    </strong>
+                </a>&nbsp;&nbsp; (method: <%= route.method %>)
+            </li>
+            <% }); %>
+    </ul>
+</body>
+
+</html>

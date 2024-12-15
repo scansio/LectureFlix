@@ -6,7 +6,10 @@
   "scripts": {
     "start": "node src/index.js",
     "init": "cp .env-template .env && npm install",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "init:database": "npm run migrate && npm run seed",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "node database_helper/migrate.js",
+    "seed": "node database_helper/seed.js"
   },
   "author": "",
   "license": "MIT",
